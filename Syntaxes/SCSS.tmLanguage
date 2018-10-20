@@ -2040,6 +2040,10 @@
 					<key>include</key>
 					<string>#interpolation</string>
 				</dict>
+				<dict>
+					<key>include</key>
+					<string>#global</string>
+				</dict>
 			</array>
 		</dict>
 		<key>variable_setting</key>
@@ -2087,6 +2091,19 @@
 			</dict>
 			<key>match</key>
 			<string>\s*(\$[A-Za-z0-9_-]+\b)\s*</string>
+		</dict>
+		<key>global</key>
+		<dict>
+			<key>match</key>
+			<string>(\:global)</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>variable.other.scss</string>
+				</dict>
+			</dict>
 		</dict>
 	</dict>
 	<key>scopeName</key>
