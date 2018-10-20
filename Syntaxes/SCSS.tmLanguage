@@ -485,15 +485,15 @@
 			<array>
 				<dict>
 					<key>include</key>
-					<string>#string-double</string>
+					<string>#string_double</string>
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>#string-single</string>
+					<string>#string_single</string>
 				</dict>
 				<dict>
 					<key>begin</key>
-					<string>\s*(url)?\s*(?:\(|"|')\s*</string>
+					<string>\s*(url)?\s*(?:\()\s*</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
@@ -508,7 +508,7 @@
 						</dict>
 					</dict>
 					<key>end</key>
-					<string>\s*(?:"|'|\))\s*</string>
+					<string>\s*\)\s*</string>
 					<key>endCaptures</key>
 					<dict>
 						<key>1</key>
@@ -527,11 +527,11 @@
 						</dict>
 						<dict>
 							<key>include</key>
-							<string>#string-single</string>
+							<string>#string_single</string>
 						</dict>
 						<dict>
 							<key>include</key>
-							<string>#string-double</string>
+							<string>#string_double</string>
 						</dict>
 					</array>
 				</dict>
