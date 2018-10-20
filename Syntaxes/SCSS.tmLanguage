@@ -1221,17 +1221,10 @@
 			<key>name</key>
 			<string>support.constant.property-value.scss</string>
 		</dict>
-		<key>constant_rgb</key>
+		<key>constant_percentage</key>
 		<dict>
 			<key>match</key>
-			<string>(\b0*((1?[0-9]{1,2})|(2([0-4][0-9]|5[0-5])))\s*,\s*)(0*((1?[0-9]{1,2})|(2([0-4][0-9]|5[0-5])))\s*,\s*)(0*((1?[0-9]{1,2})|(2([0-4][0-9]|5[0-5])))\b)</string>
-			<key>name</key>
-			<string>constant.other.color.rgb-value.scss</string>
-		</dict>
-		<key>constant_rgb_percentage</key>
-		<dict>
-			<key>match</key>
-			<string>\b([0-9]{1,2}|100)\s*%,\s*([0-9]{1,2}|100)\s*%,\s*([0-9]{1,2}|100)\s*%</string>
+			<string>%</string>
 			<key>name</key>
 			<string>constant.other.color.rgb-percentage.scss</string>
 		</dict>
@@ -1668,14 +1661,10 @@
 					<key>include</key>
 					<string>#constant_hex</string>
 				</dict>
-				<dict>
+<!-- 				<dict>
 					<key>include</key>
-					<string>#constant_rgb</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#constant_rgb_percentage</string>
-				</dict>
+					<string>#constant_percentage</string>
+				</dict> -->
 				<dict>
 					<key>include</key>
 					<string>#constant_important</string>
